@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Atividade 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <script src="../js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center mb-3 menu">            
+                <div id="" class="col-sm-6 col-xs-12">
+                    <h1 class="display-4 person-text-center person-text-color-5">Golden Retriver</small></h1>           
+                </div>
+
+                <div id="" class="col-sm-6 col-xs-12">
+                    <nav class="nav nav-pills nav-justified">
+                        <a class="nav-item nav-link person-text-color-5" href="../index.html">Tecnologia</a>
+                        <a class="nav-item nav-link person-text-color-5" href="formulario.html">Formulário</a> 
+                        <a class="nav-item nav-link active person-background-color-1" href="#">Golden Retriver</a>                    
+                    </nav>
+                </div>            
+            </div>
+
+
+            <div class="row mb-4">
+                <div id="" class="col-md-10 offset-md-1 col-xl-12 offset-xl-0 col-12"> 
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+
+                            <img src="../img/golden.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="../img/golden2.jpg" class="img" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+
+                            <img src="../img/golden4.png" class="img" style="width:100%">
+                        </div>
+
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+
+
+
+                    </div>
+
+                    <script>
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>   
+
+                    <div id="" class="col-md-10 offset-md-1 col-xl-8 offset-xl-2 col-12">    
+
+                        <h2 class="person-text-color-5 text-center" >CURIOSIDADES</h2>
+                                                
+                        <div id="accordion">                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="person-text-color-1 text-center collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                                        Inteligência e Obediência do Golden Retriever
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Os cachorros dessa raça são considerados de grande inteligência. Além de serem utilizados muitas vezes como cachorros de terapia e cães-guia para cegos e pessoas com deficiências motoras, o Golden Retriever é um cachorro obediente. Apesar de ser muito ativo, ele consegue ficar bem em alguns momentos em que é preciso ter calmaria. Eles aprendem truques e brincadeiras facilmente, principalmente se elas envolverem buscas e trazer coisas com a boca. São capazes de realizar truques inteligentes principalmente quando se trata de obediência competitiva. Por ser um cachorro que é muito ávido por agradar, ele também vai querer aprender os truques e as regras justamente para isso.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="person-text-color-1 text-center collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                        Temperamento do Golden Retriever
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        O Golden Retriever é conhecido como um dos cachorros mais dóceis e companheiros que existe na atualidade. Ele é conhecido por ser naturalmente devoto à família, sempre gostando de agradar àqueles que ama. É um cachorro também muito agitado, que demanda exercícios físicos e mentais diariamente, adora brincar e se dá muito bem com crianças e outros cachorros. Seu jeito um pouco brincalhão demais pode, porém, não agradar a todos, fazendo com que os goldens se metam em algumas confusões por conta disso. De qualquer forma, socializar o pet desde filhote é fundamental para que ele seja assim sempre tão receptivo, caso contrário, ele poderá ser protetor demais e não gostar quando outros animais se aproximam de seus pais humanos.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="person-text-color-1 text-center collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                        Cuidados específicos do Golden Retriever
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                       O principal cuidado que se deve ter com um cachorro da raça Golden Retriever é com relação a seus pelos. Por terem uma pelagem muito densa, principalmente no calor, eles podem sofrer com dermatite e outros problemas de pele. É necessário escovar os pelos deles com frequência e dar banhos regulares. Atividades na água são muito divertidas para os goldens e podem ser fundamentais para a saúde desses pets. A natação auxilia no fortalecimento muscular, na saúde do coração e também na manutenção do peso. Converse com o médico veterinário do seu pet para saber se ele está apto a realizar esse tipo de exercício. Ele certamente vai adorar!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>        
+
+        <div class="row">
+            <div id="esquerdo" class="col-sm-6 col-xs-12">
+
+            </div> 
+
+            <div id="direito" class="col-sm-6 col-xs-12 ">
+                <p class="text-right person-text-color-5 ">by: Vitória 2º GTI</p>
+            </div>
+        </div>
+    </div>       
+
+</body>
+</html>
